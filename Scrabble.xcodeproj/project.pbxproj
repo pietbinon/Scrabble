@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		77C68E211E60E20800514CDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C68E201E60E20800514CDD /* main.m */; };
+		77C68E291E60E23B00514CDD /* InputLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C68E281E60E23B00514CDD /* InputLog.m */; };
+		77C68E2C1E60E3CE00514CDD /* ScrabbleLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C68E2B1E60E3CE00514CDD /* ScrabbleLogic.m */; };
+		77C68E2F1E60E8BA00514CDD /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C68E2E1E60E8BA00514CDD /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		77C68E1D1E60E20800514CDD /* Scrabble */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Scrabble; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C68E201E60E20800514CDD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77C68E271E60E23B00514CDD /* InputLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputLog.h; sourceTree = "<group>"; };
+		77C68E281E60E23B00514CDD /* InputLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputLog.m; sourceTree = "<group>"; };
+		77C68E2A1E60E3CE00514CDD /* ScrabbleLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrabbleLogic.h; sourceTree = "<group>"; };
+		77C68E2B1E60E3CE00514CDD /* ScrabbleLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrabbleLogic.m; sourceTree = "<group>"; };
+		77C68E2D1E60E8BA00514CDD /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		77C68E2E1E60E8BA00514CDD /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				77C68E201E60E20800514CDD /* main.m */,
+				77C68E271E60E23B00514CDD /* InputLog.h */,
+				77C68E281E60E23B00514CDD /* InputLog.m */,
+				77C68E2A1E60E3CE00514CDD /* ScrabbleLogic.h */,
+				77C68E2B1E60E3CE00514CDD /* ScrabbleLogic.m */,
+				77C68E2D1E60E8BA00514CDD /* ScoreKeeper.h */,
+				77C68E2E1E60E8BA00514CDD /* ScoreKeeper.m */,
 			);
 			path = Scrabble;
 			sourceTree = "<group>";
@@ -119,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C68E2F1E60E8BA00514CDD /* ScoreKeeper.m in Sources */,
 				77C68E211E60E20800514CDD /* main.m in Sources */,
+				77C68E2C1E60E3CE00514CDD /* ScrabbleLogic.m in Sources */,
+				77C68E291E60E23B00514CDD /* InputLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
