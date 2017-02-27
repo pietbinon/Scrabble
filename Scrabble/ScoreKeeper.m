@@ -16,6 +16,7 @@
     
     for (NSNumber *number in a) {
         self.count += [number integerValue];
+        NSLog(@"score %d", self.count);
     }
     return self.count;
 }

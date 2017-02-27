@@ -54,15 +54,14 @@
     
     for (NSInteger i = 0; i < stringCount; i++) {
         
-        char input = [str characterAtIndex: i];
-        NSString *tempString = [NSString stringWithUTF8String: &input];
-        NSString *inputS = [tempString stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-//        NSInteger tempInt = [[self.dictionary objectForKey: inputS] integerValue];
-//        NSNumber *tempNumber = @(tempInt);
-        
+        NSString *inputS = [str substringWithRange:NSMakeRange(i, 1)];
+
+        //        NSInteger tempInt = [[self.dictionary objectForKey: inputS] integerValue];
+        //        NSNumber *tempNumber = @(tempInt);
+        NSLog(@"letter: %@", inputS);
         if ([self.dictionary objectForKey: inputS]){
-            
-//            [self.array addObject: tempNumber];
+            NSLog(@"Points: %@", self.dictionary[inputS]);
+            //            [self.array addObject: tempNumber];
             
             [self.array addObject: [self.dictionary objectForKey: inputS]];
         }
