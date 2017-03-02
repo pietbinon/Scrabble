@@ -17,15 +17,23 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         while (YES) {
+
+//====================================================================================
+//            //With instance method...
+//            InputLog *inputLog = [InputLog new];
+//            NSString *inputString = [inputLog input];
             
-            InputLog *inputLog = [InputLog new];
-            NSString *inputString = [inputLog input];
+            //With class method
+            NSString *inputString = [InputLog input];
+//=====================================================================================
             
             ScrabbleLogic *scrabbleLogic = [ScrabbleLogic new];
             NSMutableArray *tempArray = [scrabbleLogic scrabbleCount: inputString];
             
+            
             ScoreKeeper *scoreKeeper = [ScoreKeeper new];
             NSInteger count = [scoreKeeper arrayCount: tempArray];
+            
             
             NSLog (@"You word is worth %ld points", (long)count);
         }

@@ -12,7 +12,7 @@
 
 @implementation InputLog
 
-- (NSString *) input {
++ (NSString *) input {
     
     printf("Please enter your word...\n");
     

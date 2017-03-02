@@ -12,6 +12,6 @@
 
 @interface InputLog : NSObject
 
-- (NSString *) input;
++ (NSString *) input;
 
 @end
